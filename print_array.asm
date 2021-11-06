@@ -19,6 +19,7 @@ main:
 
 	jal printA
 
+#print the result
 printA:
 	li $t2, 1
 	la $t1, 0($a0)
@@ -29,9 +30,9 @@ loop:
 	lw  $s0 ($t1)
 	addi $t1 $t1 4
 
-    li $v0 1  
-    move $a0 $s0
-    syscall
+   	li $v0 1  
+  	move $a0 $s0
+  	syscall
 
 	add $t2 $t2 1
 	
