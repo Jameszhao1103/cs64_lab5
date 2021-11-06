@@ -10,7 +10,7 @@ conv:
 	li $t1 5
 	li $t3 2
 	li $t4 3
-
+	move $v0 $t0
 	j for_loop
 
 for_loop:
@@ -44,7 +44,6 @@ return_loop:
 main:
 	li $a0 5
 	li $a1 7
-	move $v0 $t0
 	jal conv
 	move $t5 $v0
 
