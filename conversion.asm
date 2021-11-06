@@ -5,6 +5,7 @@
 
 #lab partner: Ziyue Wang
 .text
+#first we define some variable and make sure v0 is 0.
 conv:
     li $t0 0
 	li $t1 5
@@ -29,6 +30,7 @@ for_loop:
 end_loop:
 	jr $ra
 
+#when y is smaller than 3
 y_small:
 	sub $a1 $a1 1
 	j return_loop
@@ -38,7 +40,6 @@ return_loop:
 	addi $t0 $t0 1
 
 	j for_loop
-
 
 
 main:
